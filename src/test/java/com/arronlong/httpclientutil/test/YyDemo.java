@@ -75,7 +75,6 @@ public class YyDemo {
         String jsonString = JSONObject.toJSONString(map);
         System.out.println(jsonString);
 
-
 //        JSONArray params = new JSONArray();
 //        params.add(map);
 //        JSONObject params = JSONObject.fromObject(map);
@@ -89,9 +88,9 @@ public class YyDemo {
         httpPost.setEntity(questjson);
         CloseableHttpResponse response = null;
         try {
-      //      由客户端执行(发送) Post请求
+            // 由客户端执行(发送) Post请求
             response = httpClient.execute(httpPost);
-        //    从响应模型中获取响应实体
+            //    从响应模型中获取响应实体
             HttpEntity responseEntity = response.getEntity();
 
                 System.out.println("响应状态为:" + response.getStatusLine());
